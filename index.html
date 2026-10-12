@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOLS FITNESS</title>
+
+    <!-- Bootstrap 5 + Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <!-- Tu CSS propio -->
+     <link href="css/styles.css" rel="stylesheet" />
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#menuPrincipal" data-bs-offset="80" tabindex="0">
+
+    <a class="visually-hidden-focusable btn btn-light position-absolute m-2 salto-contenido" href="#contenido">Saltar al contenido</a>
+
+    <!-- HEADER + NAV -->
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg" aria-label="Navegación principal">
+            <div class="container">
+                <a class="logo" href="#inicio"><strong>HOLS</strong><small>FITNESS</small></a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#menuPrincipal" aria-controls="menuPrincipal"
+                        aria-expanded="false" aria-label="Mostrar menú">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-end" id="menuPrincipal">
+                    <ul class="navbar-nav align-items-lg-center">
+                        <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#nosotros">Nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#galeria">Galería</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#multimedia">Multimedia</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main id="contenido">
+
+        <!-- HERO -->
+        <section id="inicio" class="hero py-5" aria-labelledby="t-inicio">
+            <div class="container py-lg-4">
+                <div class="row align-items-center g-4">
+                    <div class="col-lg-6">
+                        <p class="etiqueta">HOLS FITNESS</p>
+                        <h1 id="t-inicio" class="display-5 fw-bolder text-uppercase">¡Activa tu<br>mejor versión!</h1>
+                        <p class="fs-5 mb-4">Ejercicio, salud y hábitos saludables<br class="d-none d-lg-block"> para una vida mejor.</p>
+                        <a href="#servicios" class="btn btn-hols px-4 py-2">Comenzar <i class="bi bi-arrow-right ms-2"></i></a>
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="img/logo.jpeg" alt="Ejercicio y vida activa" class="placeholder-img img-hero">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- NOSOTROS -->
+        <section id="nosotros" class="py-5" aria-labelledby="t-nosotros">
+            <div class="container py-lg-3">
+                <div class="row align-items-center g-4">
+                    <div class="col-md-6">
+                        <img src="img/logo.jpeg" alt="Un espacio para el ejercicio y la salud" class="placeholder-img img-nosotros">
+                    </div>
+                    <div class="col-md-6">
+                        <p class="etiqueta">Nosotros</p>
+                        <h2 id="t-nosotros" class="fw-bold h3">¿Qué es HOLS FITNESS?</h2>
+                        <p class="mb-4">
+                            Somos una página enfocada en brindarte información, herramientas y recursos
+                            para que puedas mejorar tu salud, realizar ejercicio y mantener hábitos saludables.
+                        </p>
+                        <a href="#servicios" class="btn btn-hols px-3">Saber más <i class="bi bi-arrow-right ms-2"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SERVICIOS -->
+        <section id="servicios" class="py-5 bg-white border-top border-bottom" aria-labelledby="t-servicios">
+            <div class="container py-lg-3">
+                <div class="text-center mb-4">
+                    <p class="etiqueta">Servicios</p>
+                    <h2 id="t-servicios" class="fw-bold h3">Descubre todo lo que tenemos para ti</h2>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <article class="card card-servicio h-100 text-center p-4">
+                            <div class="mb-3">
+                                <span class="icono-circulo">
+                                    <!-- Mancuerna -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <path d="M6.5 6.5l11 11M3 10l4-4M5 12l4-4M15 18l4-4M18 15l-4 4M2 9l2-2M20 17l2-2M7 3l-2 2M19 21l2-2"/>
+                                    </svg>
+                                </span>
+                            </div>
+                            <h3 class="h6 fw-bold text-uppercase">Ejercicio</h3>
+                            <p class="small">Rutinas, consejos y recomendaciones para mantenerte activo.</p>
+                            <a href="paginas/ejercicio.html" class="btn btn-hols btn-sm mx-auto px-4">Ver más<span class="visually-hidden"> sobre ejercicio</span> <i class="bi bi-arrow-right ms-2"></i></a>
+                        </article>
+                    </div>
+
+                    <div class="col-md-4">
+                        <article class="card card-servicio h-100 text-center p-4 salud">
+                            <div class="mb-3">
+                                <span class="icono-circulo"><i class="bi bi-heart-pulse"></i></span>
+                            </div>
+                            <h3 class="h6 fw-bold text-uppercase">Salud</h3>
+                            <p class="small">Alimentación, hábitos saludables y bienestar.</p>
+                            <a href="paginas/salud.html" class="btn btn-hols btn-sm mx-auto px-4">Ver más<span class="visually-hidden"> sobre salud</span> <i class="bi bi-arrow-right ms-2"></i></a>
+                        </article>
+                    </div>
+
+                    <div class="col-md-4">
+                        <article class="card card-servicio h-100 text-center p-4 productos">
+                            <div class="mb-3">
+                                <span class="icono-circulo"><i class="bi bi-cart3"></i></span>
+                            </div>
+                            <h3 class="h6 fw-bold text-uppercase">Productos</h3>
+                            <p class="small">Encuentra los mejores productos relacionados con el ejercicio y la salud.</p>
+                            <a href="productos.html" class="btn btn-hols btn-sm mx-auto px-4">Ver más<span class="visually-hidden"> sobre productos</span> <i class="bi bi-arrow-right ms-2"></i></a>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- GALERÍA -->
+        <section id="galeria" class="py-5 bg-claro" aria-labelledby="t-galeria">
+            <div class="container py-lg-3">
+                <p class="etiqueta">Galería</p>
+                <h2 id="t-galeria" class="fw-bold h3 mb-4">Momentos que inspiran</h2>
+
+                <div class="row g-3 galeria">
+                    <div class="col-6 col-md-4"><img src="img/images.jpeg" alt="Persona realizando una sesión de entrenamiento"></div>
+                    <div class="col-6 col-md-4"><img src="img/MM.jpeg" alt="Personas llevando una vida activa con deporte"></div>
+                    <div class="col-6 col-md-4"><img src="img/nn.jpeg" alt="Ejercicio físico como parte del cuidado de la salud"></div>
+                    <div class="col-6 col-md-4"><img src="img/im.jpeg" alt="Rutina de ejercicio de alta energía"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- MULTIMEDIA -->
+        <section id="multimedia" class="py-5" aria-labelledby="t-multimedia">
+            <div class="container py-lg-3">
+                <div class="row align-items-center g-4">
+                    <div class="col-md-6">
+                        <div class="ratio ratio-16x9 bg-secondary-subtle">
+                            <video controls>
+                                <source src="videos/habitos.mp4" type="video/mp4">
+                                Tu navegador no soporta la etiqueta de video.
+                            </video>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <p class="etiqueta">Multimedia</p>
+                        <h2 id="t-multimedia" class="fw-bold h3">Videos, consejos y más</h2>
+                        <p class="mb-4">Explora nuestro contenido multimedia y aprende sobre ejercicio, salud y bienestar.</p>
+                        <button type="button" class="btn btn-hols px-3" data-bs-toggle="modal" data-bs-target="#modalVideo">
+                            Ver más <i class="bi bi-arrow-right ms-2"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACTO -->
+        <section id="contacto" class="seccion py-5 bg-claro" aria-labelledby="t-contacto">
+            <div class="container py-lg-3">
+                <div class="row g-5">
+
+                    <!-- Formulario -->
+                    <div class="col-lg-7">
+                        <p class="etiqueta">Contacto</p>
+                        <h2 id="t-contacto" class="titulo-seccion fw-bold h3">¡Escríbenos!</h2>
+                        <p class="mb-4">Solicita información sobre nuestros planes de ejercicio y bienestar. Los campos con <span aria-hidden="true">*</span><span class="visually-hidden">asterisco</span> son obligatorios.</p>
+
+                        <!-- Mensaje de confirmación (alert de Bootstrap) -->
+                        <div id="alertaExito" class="alert alert-success d-none" role="status" tabindex="-1">
+                            <strong>¡Gracias!</strong> Recibimos tu solicitud. Te contactaremos pronto.
+                        </div>
+
+                        <form id="formContacto" class="card card-servicio p-4 needs-validation" novalidate>
+
+                            <fieldset class="mb-3">
+                                <legend class="h6 fw-bold">Tus datos</legend>
+                                <div class="row g-3">
+                                    <div class="col-12">
+                                        <label for="nombre" class="form-label">Nombre completo *</label>
+                                        <input type="text" class="form-control" id="nombre" name="nombre"
+                                               required minlength="3" maxlength="60"
+                                               pattern="[A-Za-zÁÉÍÓÚáéíóúÑñÜü ]{3,60}"
+                                               autocomplete="name" aria-describedby="ayudaNombre">
+                                        <div id="ayudaNombre" class="form-text">Solo letras y espacios (mínimo 3 caracteres).</div>
+                                        <div class="invalid-feedback">Escribe tu nombre completo usando solo letras.</div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <label for="correo" class="form-label">Correo electrónico *</label>
+                                        <input type="email" class="form-control" id="correo" name="correo"
+                                               required maxlength="80" autocomplete="email"
+                                               placeholder="nombre@correo.com">
+                                        <div class="invalid-feedback">Ingresa un correo válido, por ejemplo nombre@correo.com.</div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <label for="telefono" class="form-label">Teléfono celular</label>
+                                        <input type="tel" class="form-control" id="telefono" name="telefono"
+                                               pattern="3[0-9]{9}" maxlength="10" inputmode="numeric"
+                                               autocomplete="tel" placeholder="3001234567" aria-describedby="ayudaTel">
+                                        <div id="ayudaTel" class="form-text">Opcional. 10 dígitos, empieza por 3.</div>
+                                        <div class="invalid-feedback">El celular debe tener 10 dígitos y empezar por 3.</div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <label for="edad" class="form-label">Edad *</label>
+                                        <input type="number" class="form-control" id="edad" name="edad"
+                                               required min="14" max="90" step="1" inputmode="numeric"
+                                               aria-describedby="ayudaEdad">
+                                        <div id="ayudaEdad" class="form-text">Entre 14 y 90 años.</div>
+                                        <div class="invalid-feedback">Ingresa una edad entre 14 y 90 años.</div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <label for="fechaInicio" class="form-label">Fecha en la que quieres empezar *</label>
+                                        <input type="date" class="form-control" id="fechaInicio" name="fechaInicio"
+                                               required min="2026-01-01" max="2027-12-31">
+                                        <div class="invalid-feedback">Elige una fecha de hoy en adelante.</div>
+                                    </div>
+                                </div>
+                            </fieldset>
+
+                            <fieldset class="mb-3">
+                                <legend class="h6 fw-bold">Lo que buscas</legend>
+                                <div class="row g-3">
+                                    <div class="col-12">
+                                        <label for="interes" class="form-label">¿Qué tema te interesa? *</label>
+                                        <select class="form-select" id="interes" name="interes" required>
+                                            <option value="">Selecciona una opción</option>
+                                            <option value="ejercicio">Ejercicio y rutinas</option>
+                                            <option value="salud">Salud y alimentación</option>
+                                            <option value="productos">Productos deportivos</option>
+                                        </select>
+                                        <div class="invalid-feedback">Selecciona un tema de interés.</div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <fieldset>
+                                            <legend class="form-label fs-6">¿Cuál es tu nivel de experiencia? *</legend>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="nivel" id="nivelPrincipiante" value="principiante" required>
+                                                <label class="form-check-label" for="nivelPrincipiante">Principiante</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="nivel" id="nivelIntermedio" value="intermedio">
+                                                <label class="form-check-label" for="nivelIntermedio">Intermedio</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="nivel" id="nivelAvanzado" value="avanzado">
+                                                <label class="form-check-label" for="nivelAvanzado">Avanzado</label>
+                                                <div class="invalid-feedback">Elige tu nivel de experiencia.</div>
+                                            </div>
+                                        </fieldset>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <fieldset>
+                                            <legend class="form-label fs-6">¿Qué contenido prefieres recibir?</legend>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" name="contenido" id="contRutinas" value="rutinas">
+                                                <label class="form-check-label" for="contRutinas">Rutinas de ejercicio</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" name="contenido" id="contConsejos" value="consejos">
+                                                <label class="form-check-label" for="contConsejos">Consejos de salud</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" name="contenido" id="contOfertas" value="ofertas">
+                                                <label class="form-check-label" for="contOfertas">Ofertas de productos</label>
+                                            </div>
+                                        </fieldset>
+                                    </div>
+
+                                    <div class="col-12">
+                                        <label for="mensaje" class="form-label">Mensaje *</label>
+                                        <textarea class="form-control" id="mensaje" name="mensaje" rows="4"
+                                                  required minlength="10" maxlength="300"
+                                                  aria-describedby="ayudaMensaje"></textarea>
+                                        <div id="ayudaMensaje" class="form-text">Cuéntanos tu objetivo (entre 10 y 300 caracteres).</div>
+                                        <div class="invalid-feedback">Escribe un mensaje de al menos 10 caracteres.</div>
+                                    </div>
+                                </div>
+                            </fieldset>
+
+                            <div class="form-check mb-4">
+                                <input class="form-check-input" type="checkbox" id="aceptar" name="aceptar" required>
+                                <label class="form-check-label" for="aceptar">Acepto el envío de mis datos para recibir información. *</label>
+                                <div class="invalid-feedback">Debes aceptar para poder enviar el formulario.</div>
+                            </div>
+
+                            <div class="d-flex flex-wrap gap-2">
+                                <button type="submit" class="btn btn-hols px-4">Enviar solicitud <i class="bi bi-arrow-right ms-2" aria-hidden="true"></i></button>
+                                <button type="reset" class="btn btn-outline-dark px-4">Borrar datos</button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- Información lateral -->
+                    <div class="col-lg-5">
+                        <img src="imagenes/saludd.jpeg" alt="" class="placeholder-img img-contacto mb-3">
+                        <aside class="d-flex align-items-start gap-2 mb-4" aria-label="Mensaje de atención">
+                            <i class="bi bi-envelope-fill fs-5" aria-hidden="true"></i>
+                            <div>
+                                <strong class="d-block small">Tu opinión nos importa</strong>
+                                <span class="small texto-suave">Estamos aquí para resolver tus dudas.</span>
+                            </div>
+                        </aside>
+                        <p class="mb-1"><a class="enlace link-dark fw-semibold" href="paginas/contacto.html">Ir a la página de contacto</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="py-4">
+        <div class="container">
+            <div class="row align-items-center gy-3">
+                <div class="col-md-3 text-center text-md-start">
+                    <a class="logo" href="#inicio"><strong>HOLS</strong><small>FITNESS</small></a>
+                </div>
+                <div class="col-md-6">
+                    <nav aria-label="Navegación del pie de página">
+                        <ul class="nav justify-content-center">
+                            <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#nosotros">Nosotros</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#galeria">Galería</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#multimedia">Multimedia</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                        </ul>
+                    </nav>
+                    <p class="small text-center mb-0 mt-2 texto-copy">
+                        © 2026 HOLS FITNESS. Todos los derechos reservados.
+                    </p>
+                </div>
+                <div class="col-md-3 text-center text-md-end redes">
+                    <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botón volver arriba -->
+    <a href="#inicio" id="volverArriba" class="btn btn-hols rounded-circle shadow" aria-label="Volver al inicio de la página">
+        <i class="bi bi-arrow-up"></i>
+    </a>
+
+    <!-- MODAL: video de YouTube (botón "Ver más" de Multimedia) -->
+    <div class="modal fade" id="modalVideo" tabindex="-1" aria-labelledby="tituloVideo" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="tituloVideo">Videos, consejos y más</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body p-0">
+                    <div class="ratio ratio-16x9">
+                        <iframe id="videoYoutube" data-src="https://www.youtube.com/embed/YWGOThGG8-Y?si=VKOUZcVYZmYd_-eL&amp;start=10"
+                                title="YouTube video player"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin"
+                                allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Menú móvil: se cierra al elegir una sección
+        const menu = document.getElementById('menuPrincipal');
+        menu.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                if (menu.classList.contains('show')) bootstrap.Collapse.getOrCreateInstance(menu).hide();
+            });
+        });
+
+        // Marca con aria-current la sección activa
+        document.addEventListener('activate.bs.scrollspy', e => {
+            menu.querySelectorAll('.nav-link').forEach(l => l.removeAttribute('aria-current'));
+            e.relatedTarget.setAttribute('aria-current', 'page');
+        });
+
+        // Botón volver arriba: aparece al bajar
+        const btnArriba = document.getElementById('volverArriba');
+        window.addEventListener('scroll', () => {
+            btnArriba.classList.toggle('visible', window.scrollY > 400);
+        });
+
+
+        // Formulario: fecha mínima = hoy y validación con estilos de Bootstrap
+        const form = document.getElementById('formContacto');
+        const alerta = document.getElementById('alertaExito');
+        const fecha = document.getElementById('fechaInicio');
+        const hoy = new Date();
+        const iso = d => d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0');
+        fecha.min = iso(hoy);
+        const limite = new Date(hoy); limite.setFullYear(hoy.getFullYear() + 1);
+        fecha.max = iso(limite);
+
+        form.addEventListener('submit', e => {
+            e.preventDefault();
+            if (!form.checkValidity()) {
+                form.classList.add('was-validated');
+                form.querySelector(':invalid').focus();
+                return;
+            }
+            // Aquí iría el envío real al servidor (action / fetch)
+            form.reset();
+            form.classList.remove('was-validated');
+            alerta.classList.remove('d-none');
+            alerta.focus();
+        });
+        form.addEventListener('reset', () => { form.classList.remove('was-validated'); });
+
+        // Carga el video solo al abrir el modal y lo detiene al cerrarlo
+        const modalVideo = document.getElementById('modalVideo');
+        const iframe = document.getElementById('videoYoutube');
+        modalVideo.addEventListener('show.bs.modal', () => { iframe.src = iframe.dataset.src; });
+        modalVideo.addEventListener('hidden.bs.modal', () => { iframe.src = ''; });
+    </script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+/* ==========================================================
+   HOLS FITNESS - Estilos propios
+   Se carga después de Bootstrap para poder ajustar sus estilos.
+   Para cambiar los colores del sitio, edita solo las variables de :root.
+   ========================================================== */
+
+:root {
+    --hols-verde: #0b7a4b;          /* botones y acentos principales */
+    --hols-verde-hover: #086039;
+    --hols-verde-claro: #dff5e8;    /* fondo del hero */
+    --hols-menta: #f0faf4;          /* fondos alternos de secciones */
+    --hols-naranja: #ff7a30;        /* detalles de energía (solo decorativo) */
+    --hols-naranja-claro: #ffe6d6;
+    --hols-crema: #fff4ea;          /* fondo de multimedia */
+    --hols-oscuro: #12261e;         /* footer y títulos */
+    --hols-texto: #1b2a24;
+    --hols-borde: #c9dfd3;
+}
+
+html { scroll-behavior: smooth; }
+body { background: #ffffff; color: var(--hols-texto); font-family: "Segoe UI", system-ui, sans-serif; }
+h1, h2, h3, h4, h5, h6 { color: var(--hols-oscuro); }
+section[id] { scroll-margin-top: 70px; }
+
+/* ---------- Logo ---------- */
+.logo { text-decoration: none; color: var(--hols-oscuro); line-height: 1; display: inline-block; }
+.logo strong { display: block; font-size: 1.8rem; font-weight: 800; letter-spacing: -1px; }
+.logo small { display: block; font-size: .6rem; letter-spacing: .45em; color: var(--hols-verde); font-weight: 700; }
+
+/* ---------- Navegación ---------- */
+.navbar { background: #ffffff; border-bottom: 3px solid var(--hols-verde); }
+.navbar .nav-link { color: var(--hols-texto); font-weight: 600; font-size: .85rem; padding: .25rem .1rem; margin-left: 1.5rem; border-bottom: 3px solid transparent; }
+.navbar .nav-link:hover { color: var(--hols-verde); }
+.navbar .nav-link.active { color: var(--hols-verde); border-bottom-color: var(--hols-naranja); }
+
+/* ---------- Botones ---------- */
+.btn-hols { background: var(--hols-verde); color: #ffffff; border-radius: 6px; font-weight: 600; border: 0; }
+.btn-hols:hover, .btn-hols:focus { background: var(--hols-verde-hover); color: #ffffff; }
+.btn-outline-dark { color: var(--hols-oscuro); border-color: var(--hols-oscuro); border-radius: 6px; }
+.btn-outline-dark:hover { background: var(--hols-oscuro); color: #ffffff; }
+
+/* ---------- Textos pequeños sobre los títulos ---------- */
+.etiqueta { font-size: .75rem; letter-spacing: .08em; margin-bottom: .25rem; text-transform: uppercase; color: var(--hols-verde); font-weight: 700; }
+.texto-suave { color: #3d4a44; }
+
+/* ---------- Secciones ---------- */
+.hero { background: var(--hols-verde-claro); border-bottom: 4px solid var(--hols-naranja); }
+.bg-claro { background: var(--hols-menta); }
+#nosotros { background: #ffffff; }
+#servicios { background: #ffffff !important; border-color: var(--hols-borde) !important; }
+#multimedia { background: var(--hols-crema); }
+
+/* ---------- Imágenes ---------- */
+.placeholder-img { background: var(--hols-borde); object-fit: cover; width: 100%; border-radius: 10px; box-shadow: 0 6px 16px rgba(18, 38, 30, .15); }
+.img-hero { max-height: 280px; }
+.img-nosotros { max-height: 240px; }
+.img-contacto { max-height: 220px; }
+
+/* ---------- Tarjetas de servicios y formulario ---------- */
+.card-servicio { border: 1px solid var(--hols-borde); border-top: 4px solid var(--hols-naranja); border-radius: 10px; background: #ffffff; box-shadow: 0 4px 12px rgba(18, 38, 30, .08); }
+.icono-circulo { width: 64px; height: 64px; border-radius: 50%; background: var(--hols-naranja-claro); color: var(--hols-oscuro);
+                 display: inline-flex; align-items: center; justify-content: center; font-size: 1.9rem; }
+.form-control:focus, .form-select:focus { border-color: var(--hols-verde); box-shadow: 0 0 0 .2rem rgba(11, 122, 75, .25); }
+.form-check-input:checked { background-color: var(--hols-verde); border-color: var(--hols-verde); }
+.form-text { color: #3d4a44; }
+
+/* ---------- Galería ---------- */
+.galeria img { aspect-ratio: 16 / 9; object-fit: cover; width: 100%; border-radius: 10px; box-shadow: 0 4px 12px rgba(18, 38, 30, .15); }
+
+/* ---------- Botón volver arriba ---------- */
+#volverArriba { position: fixed; right: 1rem; bottom: 1rem; width: 44px; height: 44px; padding: 0;
+                display: none; align-items: center; justify-content: center; z-index: 1030; }
+#volverArriba.visible { display: inline-flex; }
+
+/* ---------- Foco visible para navegar con teclado ---------- */
+a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible, select:focus-visible {
+    outline: 3px solid var(--hols-naranja); outline-offset: 2px; }
+
+/* ---------- Enlace "Saltar al contenido" ---------- */
+.salto-contenido { z-index: 2000; }
+
+/* ---------- Footer ---------- */
+footer { background: var(--hols-oscuro); color: #ffffff; border-top: 4px solid var(--hols-naranja); }
+footer .logo { color: #ffffff; }
+footer .logo small { color: #7fe0b0; }
+footer .nav-link { color: #ffffff; font-size: .75rem; }
+footer .nav-link:hover { color: var(--hols-naranja); }
+footer .redes a { color: #ffffff; font-size: 1.3rem; margin-left: .75rem; }
+footer .redes a:hover { color: var(--hols-naranja); }
+.texto-copy { font-size: .7rem; }
